@@ -8,22 +8,16 @@ vector<string> split(const string &);
 
 
 int simpleArraySum(vector<int> ar) {
+    /*
+    The function simpleArraySum takes a vector of integers as input and returns the sum of all the elements in the vector.
+    :param ar: A vector of integers.
+    :return: An integer representing the sum of all elements in the vector.
+    */
     int summ = 0;
-    for (int i = 0; i < ar.size(); i++) //ar.size() only works for vectors
+    for (int i = 0; i < ar.size(); i++) 
     {
         summ += ar[i];
     }
-    /* 
-    Alternative approach:
-    for(int num: ar){
-        summ += num; // num is the value of each element in the vector
-    }
-
-    **Note: This range-based for loop (introduced in C++11) may not work in C++ versions lower than 11.
-    Also, a traditional for loop may have slightly better performance than a range-based for loop in some cases, 
-    but the difference is usually negligible for small collections.
-    The range-based for loop is generally more readable and convenient, though it has limitations in certain scenarios.
-    */
     return summ;
     
 }

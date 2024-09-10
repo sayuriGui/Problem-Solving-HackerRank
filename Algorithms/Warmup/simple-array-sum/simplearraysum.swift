@@ -14,6 +14,12 @@ In Swift, the syntax for defining a function is:
 
 func simpleArraySum(ar: [Int]) -> Int {
     /*
+    - The function `simpleArraySum` takes an array of integers `ar` as input and returns an integer.
+    :param ar: An array of integers.
+    :return: The sum of all the integers in the input array.
+    */
+
+    /*
     - `var` is used to declare a mutable variable (i.e., one that can change).
     - Swift uses type inference, so explicitly defining the type of `sum` is not necessary here.
     */

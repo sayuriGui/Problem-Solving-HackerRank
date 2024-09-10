@@ -19,6 +19,13 @@ func functionName(parameterName parameterType) returnType {
 */
 
 func simpleArraySum(ar []int32) int32 {
+    /*
+    The function simpleArraySum takes a slice of integers as input and returns the sum of all the integers in the slice.
+    :param ar: a slice of integers
+    :return: the sum of all the integers in the slice
+    */
+
+
     /* In Go, we declare a variable using the following syntax:
     var variableName variableType
     However, Go also supports type inference using ':=' for initialization.

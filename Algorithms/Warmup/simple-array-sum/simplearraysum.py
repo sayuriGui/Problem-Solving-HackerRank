@@ -14,6 +14,12 @@ import sys
 #
 
 def simpleArraySum(ar):
+    """
+    This function takes an array of integers as input and returns the sum of all the integers in the array.
+    :param ar: List of integers
+    :return: Sum of all the integers in the array
+    """
+
     return sum(ar) 
     # Other way to solve this problem
     # sum = 0

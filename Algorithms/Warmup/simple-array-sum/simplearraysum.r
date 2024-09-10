@@ -7,6 +7,12 @@
 # The value of the last evaluated expression in the function is returned automatically.
 
 simpleArraySum <- function(ar) {
+    """
+    Function to calculate the sum of all the elements in a list.
+    :param ar: list of integers
+    :return: sum of all the elements in the list
+    """
+
     sum(ar) # sum() is a built-in function in R that returns the sum of all the elements in a vector or list. 
     # Similar to Python, sum() in R takes a vector or other iterable as an argument.
 }

@@ -31,6 +31,13 @@ The return type can also be omitted when returning 'Unit'.
 
 fun simpleArraySum(ar: Array<Int>): Int {
     /*
+    The function simpleArraySum takes a vector of integers as input and returns the sum of all the elements in the vector.
+    :param ar: An array of integers.
+    :return: An integer representing the sum of all elements in the vector.
+    */
+
+
+    /*
     In Kotlin, variables are declared using 'var' (for mutable variables) or 'val' (for read-only variables).
     The syntax is:
         var <variable_name>: <data_type> = <value>

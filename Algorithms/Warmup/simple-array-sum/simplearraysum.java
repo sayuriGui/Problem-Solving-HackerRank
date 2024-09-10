@@ -14,6 +14,11 @@ class Result {
     //"Public static" means that the method belongs to the class and can be called without creating an instance of the class.
     
     public static int simpleArraySum(List<Integer> ar) {
+        /*
+        The function simpleArraySum takes in a List of integers and returns the sum of all elements in the List.
+        :param ar: A List of integers.
+        :return: An integer representing the sum of all elements in the vector.
+        */
         int sum = 0;
         
         // For loop in Java has the same syntax as C++ for index-based iteration.
