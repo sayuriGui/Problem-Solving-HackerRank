@@ -1,17 +1,5 @@
 import Foundation
 
-/*
-In Swift, the syntax for defining a function is:
-    func functionName(parameter1: Type, parameter2: Type, ...) -> ReturnType {
-        // function body
-    }
-
-- The `func` keyword is used to define a function.
-- Parameters are written with their name followed by a colon and the type.
-- The return type is specified with the `->` symbol, followed by the type of the return value.
-- If the function doesn't return a value, the return type can be omitted or specified as `Void`.
-*/
-
 func simpleArraySum(ar: [Int]) -> Int {
     /*
     - The function `simpleArraySum` takes an array of integers `ar` as input and returns an integer.
@@ -19,16 +7,7 @@ func simpleArraySum(ar: [Int]) -> Int {
     :return: The sum of all the integers in the input array.
     */
 
-    /*
-    - `var` is used to declare a mutable variable (i.e., one that can change).
-    - Swift uses type inference, so explicitly defining the type of `sum` is not necessary here.
-    */
     var sum = 0
-    
-    /*
-    - The `for-in` loop in Swift is used to iterate over arrays, ranges, or any sequence. 
-    - It's similar to the `for` loop in Python and Kotlin, and allows easy iteration through collections.
-    */
     for i in ar {
         sum += i
     }

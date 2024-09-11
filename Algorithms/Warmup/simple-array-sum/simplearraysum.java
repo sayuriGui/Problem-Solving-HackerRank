@@ -1,18 +1,16 @@
-import java.io.*; // for BufferedReader, InputStreamReader, FileWriter, BufferedWriter, IOException
-import java.math.*; // for BigDecimal, BigInteger
-import java.security.*; // for MessageDigest, NoSuchAlgorithmException
-import java.text.*; // for DateFormat, SimpleDateFormat, ParseException
-import java.util.*; // for Scanner, Random, Arrays, Collections, List, ArrayList, Map, HashMap, Set, Iterator, StringTokenizer
-import java.util.concurrent.*; // for Callable, TimeUnit, ExecutorService, Executors
-import java.util.function.*; // for Function, UnaryOperator
-import java.util.regex.*; // for Pattern, Matcher
-import java.util.stream.*; // for Stream, IntStream, Collectors, Collector
-import static java.util.stream.Collectors.joining; // for joining()
-import static java.util.stream.Collectors.toList; // for toList()
+import java.io.*; 
+import java.math.*; 
+import java.security.*; 
+import java.text.*; 
+import java.util.*;
+import java.util.concurrent.*; 
+import java.util.function.*;
+import java.util.regex.*; 
+import java.util.stream.*; 
+import static java.util.stream.Collectors.joining; 
+import static java.util.stream.Collectors.toList; 
 
 class Result {
-    //"Public static" means that the method belongs to the class and can be called without creating an instance of the class.
-    
     public static int simpleArraySum(List<Integer> ar) {
         /*
         The function simpleArraySum takes in a List of integers and returns the sum of all elements in the List.
@@ -20,11 +18,7 @@ class Result {
         :return: An integer representing the sum of all elements in the vector.
         */
         int sum = 0;
-        
-        // For loop in Java has the same syntax as C++ for index-based iteration.
         for (int i = 0; i < ar.size(); i++) {
-            // In Java, you cannot access list elements with square brackets like in C++. 
-            // Instead, use the get() method to access elements of a List.
             sum += ar.get(i);
         }
         return sum;

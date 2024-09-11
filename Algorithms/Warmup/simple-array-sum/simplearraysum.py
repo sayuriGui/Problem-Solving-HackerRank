@@ -21,12 +21,6 @@ def simpleArraySum(ar):
     """
 
     return sum(ar) 
-    # Other way to solve this problem
-    # sum = 0
-    # for i in ar:  
-    #     sum += i
-    # return sum
-    # But the first way is more efficient
     
 
 if __name__ == '__main__':
