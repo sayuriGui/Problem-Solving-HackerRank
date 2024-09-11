@@ -1,9 +1,9 @@
 simpleArraySum <- function(ar) {
-    """
-    Function to calculate the sum of all the elements in a list.
-    :param ar: list of integers
-    :return: sum of all the elements in the list
-    """
+
+    #Function to calculate the sum of all the elements in a list.
+    #:param ar: list of integers
+    #:return: sum of all the elements in the list
+
 
     sum(ar)
 

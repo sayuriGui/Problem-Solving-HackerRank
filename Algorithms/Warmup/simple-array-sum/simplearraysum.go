@@ -1,11 +1,12 @@
 package main
 
 import (
-    "bufio" 
-    "fmt" 
-    "os" 
-    "strconv" 
-    "strings" 
+    "bufio"
+    "fmt"
+    "io"
+    "os"
+    "strconv"
+    "strings"
 )
 
 func simpleArraySum(ar []int32) int32 {
@@ -20,8 +21,8 @@ func simpleArraySum(ar []int32) int32 {
         summ += value
     }
     return summ
-}
 
+}
 
 func main() {
     reader := bufio.NewReaderSize(os.Stdin, 16 * 1024 * 1024)
