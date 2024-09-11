@@ -22,7 +22,7 @@ compareTriplets <- function(a, b) {
         if (a[i] > b[i]) {
             alice <- alice + 1
         } else if (a[i] < b[i]) {
-            bob_points <- bob + 1
+            bob <- bob + 1
         }
     }
     

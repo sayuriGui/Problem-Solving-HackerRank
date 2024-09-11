@@ -17,7 +17,7 @@ vector<string> split(const string &);
 
 vector<int> compareTriplets(vector<int> a, vector<int> b) {
     // vector<int> result(2, 0);
-    //el vector puede ser más costoso que inicializar dos variables enteras
+    // The vector might be more expensive than initializing two integer variables
     /*
     This function is to compare the elements of two vectors, a and b, and return the number of elements that are greater in a than in b and the number of elements that are greater in b than in a.
     :param a: a vector of integers
@@ -26,11 +26,12 @@ vector<int> compareTriplets(vector<int> a, vector<int> b) {
     */
     int alice = 0, bob = 0;
     for (int i = 0; i < 3; i++) {
-        if (a[i] > b[i]) alice++; //*Notas
-        else if (a[i] < b[i]) bob++; //*Notas
+        if (a[i] > b[i]) alice++; // Notes
+        else if (a[i] < b[i]) bob++; // Notes
     }
     return {alice, bob};
 }
+
 
 int main()
 {
