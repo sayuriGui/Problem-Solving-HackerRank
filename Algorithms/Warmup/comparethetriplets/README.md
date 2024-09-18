@@ -94,6 +94,12 @@ In this example:
         ```
     - C++ allows not to use the curly braces when the if statement has only one line of code. However, it is a good practice to use them to avoid confusion and errors in the future.
 - ### Java:
+  - Also, in this part of the code, could be used the following syntax:
+    ```java
+        if (a.get(i) > b.get(i)) alice++;
+        else if (a.get(i) < b.get(i)) bob++;
+    ```
+    - In Java, the curly could be omitted when the if statement has only one line of code. However, it is a good practice to use them to avoid confusion and errors in the future.
 - ### JavaScript:
 - ### Python:
 - ### R:
