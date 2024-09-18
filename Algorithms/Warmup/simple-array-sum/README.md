@@ -243,6 +243,55 @@ We print the sum of the array's elements: 1 + 2 + 3 + 4 + 10 + 11 = 31.
             }
             ```
           - This code iterates over the elements of the ```ArrayList``` named ```numbers``` and prints each element to the console. The loop runs from index 0 to the index of the last element in the list
+- ### Javascript
+  - ***Standard Input Handling***:
+    - The ```'use strict'``` directive enables strict mode in JavaScript, which helps catch common programming errors and makes code more secure. It’s recommended to use strict mode in all JavaScript code to improve code quality and maintainability.
+    - ```const fs = require('fs')```: Imports the Node.js file system module, which provides functions for working with the file system. The ```fs``` module allows you to read and write files, create directories, and perform other file-related operations.
+    - ```process.stdin.resume()```: Resumes the standard input stream, allowing the program to read input from the console. This is necessary to read user input interactively.
+    - ```process.stdin.setEncoding('utf-8')```: Sets the encoding of the standard input stream to UTF-8, which ensures that characters are correctly interpreted when reading input from the console.
+  - ***Function Declaration***:
+    - In JavaScript, functions are defined using the ```function``` keyword, followed by the function name, parameters, and body. For example:
+      ```javascript
+      function add(a, b) {
+          return a + b;
+      }
+      ```
+    - The function name is followed by the parameter list in parentheses. Each parameter consists of the parameter name. The function body contains the code that the function executes, including variable declarations, calculations, and return statements.
+    - To call a function, you use the function name followed by the arguments in parentheses. For example:
+      ```javascript
+      const sum = add(3, 5);
+      ```
+    - This code calls the ```add()``` function with arguments 3 and 5 and assigns the result to the variable ```sum```.
+    - The ```function``` keyword is used to define functions in JavaScript, similar to ```def``` in Python or ```func``` in Go.
+  - ***Variable Declaration***:
+    - In JavaScript, you can declare variables using the ```let``` or ```const``` keywords. The ```let``` keyword is used for mutable variables, while the ```const``` keyword is used for constants. For example:
+      ```javascript
+      let x = 5;
+      const y = 10;
+      ```
+    - This code declares a mutable variable ```x``` with the value 5 and a constant ```y``` with the value 10. JavaScript can infer the type of a variable based on the value assigned to it:
+      ```javascript
+      const z = 15;
+      ```
+    - Here, a constant ```z``` is declared and initialized with the value 15. JavaScript infers that the type of ```z``` is a number based on the assigned value.
+  - ***For Loop***:
+    - In JavaScript, you can use a ```for``` loop to iterate over elements in an array. The basic syntax of a ```for``` loop in JavaScript is:
+      ```javascript
+      for (let i = 0; i < array.length; i++) {
+          // code to be executed
+      }
+      ```
+    - The loop variable ```i``` is initialized to 0, and the loop continues as long as ```i``` is less than the length of the array. The loop variable is typically used as an index to access elements of the array.
+    - ```array.length``` returns the number of elements in the array, similar to the ```size()``` method in Java / C++ or the ```len()``` function in Python.
+    - ***Alternative Approach***:
+      - An alternative approach is to use the ```reduce()``` method to calculate the sum of elements in an array. The ```reduce()``` method applies a function to each element of the array, accumulating a single result. For example:
+        ```javascript
+        const sum = ar.reduce((acc, curr) => acc + curr, 0);
+        ```
+      - This code uses the ```reduce()``` method to sum the elements of the array ```ar```. The initial value of the accumulator is 0, and the function adds each element to the accumulator. The result is stored in the variable ```sum```.
+      - ***Time Complexity***:
+        - The time complexity of the ```reduce()``` method is O(n), where n is the number of elements in the array. The method iterates over each element once, accumulating the sum. This approach is efficient and suitable for arrays of various sizes.
+        - The ```reduce()``` method is concise and expressive, making it a good choice for summing elements in an array. It leverages functional programming concepts and can be used with other array operations like filtering and mapping.
 - ### Kotlin:
   - ***Libraries***:
     - ```kotlin.collections```: Provides collection utilities like ```List```, ```Set```, and ```Map``` for storing and managing data.
