@@ -23,9 +23,11 @@ class Result {
         int bob = 0;
         
         for (int i = 0; i < 3; i++) {
-            if (a.get(i) > b.get(i)) {alice++;
+            if (a.get(i) > b.get(i)) {
+                alice++;
             }
-            else if (a.get(i) < b.get(i)) {bob++;
+            else if (a.get(i) < b.get(i)) {
+                bob++;
             }
         }
         
